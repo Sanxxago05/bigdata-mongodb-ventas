@@ -2,22 +2,54 @@
 
 ## Descripción
 
-Este proyecto implementa una base de datos NoSQL utilizando MongoDB para el almacenamiento y consulta de información relacionada con ventas.
+Este proyecto implementa una solución de almacenamiento y consulta de datos utilizando MongoDB como base de datos NoSQL para un escenario de análisis de ventas.
 
-El caso de uso seleccionado corresponde a un sistema de análisis de ventas, permitiendo gestionar información de productos, categorías, precios, cantidades y ciudades.
+El sistema permite almacenar información de productos, categorías, precios, cantidades y ciudades, realizando operaciones CRUD, filtros y consultas de agregación para obtener métricas relevantes.
 
 ---
 
-## Tecnologías utilizadas
+# Caso de uso
 
-- MongoDB
+Se desarrolló un caso de análisis de ventas con el objetivo de demostrar el funcionamiento de MongoDB en entornos Big Data.
+
+La colección utilizada almacena información relacionada con:
+
+- Producto
+- Categoría
+- Precio
+- Cantidad
+- Ciudad
+
+---
+
+# Tecnologías utilizadas
+
+- MongoDB 8.0
 - Ubuntu Server 24.04
 - GitHub
+- Mongo Shell (mongosh)
 
 ---
 
-## Base de datos
+# Base de datos
 
-### Base de datos:
-```javascript
+## Base de datos:
 ventas_db
+
+## Colección:
+ventas
+
+---
+
+# Estructura del documento
+
+Ejemplo de documento almacenado:
+
+```json
+{
+  "producto": "Mouse Gamer",
+  "categoria": "Tecnologia",
+  "precio": 120000,
+  "cantidad": 2,
+  "ciudad": "Bogota"
+}
